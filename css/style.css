@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/*--- zerando config dos navegadores ---*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--- config Globais de body e classes ---*/
+body{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   background-color: #082A44;
+  
+}
+
+section.card{
+    border: 1px solid #082A44;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+    max-width: 587px;
+    width: 100%;
+    background-color: white;
+}
+
+section.card:first-child{
+    margin-left: 0;
+}
+
+h1.title{
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*--- header ---*/
+header{
+    max-width: 1200px;
+}
+
+img#logo-header{
+    width: 100%;
+    height: 209px;
+}
+
+
+/*--- main ---*/
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/*--- section Form Config ---*/
+main section form#formulario{
+    display: flex;
+    flex-direction: column;    
+    padding: 20px;
+}
+
+main section form#formulario label{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+main section form#formulario label:first-child{
+    margin-top: 0;
+}
+
+main section form#formulario input , textarea{
+    padding-top: 7px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+main section form#formulario textarea{
+    resize: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #082A44;
+}
+
+main section form#formulario input[type="submit"]{
+    cursor:pointer;
+    margin-top: 20px;
+    padding: 7px 0;
+    width: 100px;
+    color: white;
+    font-size: 1.3rem;
+    background: linear-gradient(to right, #082A44, #2A7DE1 )
+}
+
+main section form#formulario input[type="submit"]:hover{
+    background: linear-gradient(to right, #2A7DE1, #082A44 );
+}
+
+span.linha{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #082A44, #FBE675);
+}
+
+/*--- section Lista de Cursos ---*/
+section#lista-cursos{
+    padding: 0 15px 20px;
+}
+small{
+    color: #ff0000;
+}
+
+section input#pesquisa-cursos{
+    outline: none;
+    border: 1.5px solid #082A44;
+    border-radius: 25px 0 0 25px;
+    width: 60%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+label#lupa{
+    margin-left: -5px;
+    border-radius: 0 25px 25px 0;
+    border: 1.5px solid #082A44;
+    padding: 10px;
+    padding-right: 13px;
+    font-size: 1rem;
+    color: #FBE675;
+    background-color: #082A44;
+}
+
+section table{
+    width: 100%;
+}
+
+section table tr{
+    padding-bottom: 20px;
+}
+
+section table tbody#resultado{
+    text-align: center;
+}
+
+section table tbody#resultado tr.tbodyTr{
+    background: #082a44;
+    text-shadow: 1px 1px 5px black;
+    color: white;
+    font-size: 90%;
+    letter-spacing: .7px;
+    cursor: pointer;
+}
+
+section table tbody#resultado tr.tbodyTr td{
+    padding: 7px;
+    border-radius: 5px;
+}
+
+/*--- class filtro ---*/
+.invisivel{
+    display: none;
+}
+
+/*--- footer ---*/
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+/*--- media queries ---*/
+@media only screen and (max-width:1217px){
+    main{
+        justify-content: center;
+        padding: 0 10px;
+
+    }
+    section.card{
+        margin-left: 0;
+    }
+}

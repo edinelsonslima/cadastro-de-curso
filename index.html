@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Ally</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/alert.css">
+</head>
+
+<body onload="mostrarCadastros()">
+    <header>
+        <img src="img/allycursos1.png" alt="logo-header" id="logo-header">
+    </header>
+    <main>
+        <section id="cadastro-cursos" class="card">
+            <h1 class="title">Cadastro de Cursos</h1>
+            <form id="formulario">
+                <label for="form-nome">Nome do curso</label>
+                <input type="text" name="" id="form-nome" required>
+                <span class="linha"></span>
+                <label for="form-dataInicio">Data de Início</label>
+                <input type="date" name="" id="form-dataInicio" required>
+                <span class="linha"></span>
+                <label for="form-dataFim">Data de Final</label>
+                <input type="date" name="" id="form-dataFim" required>
+                <span class="linha"></span>
+                <label for="form-duracao">Duração (Semanas)</label>
+                <input type="number" min='0' name="" id="form-duracao" required>
+                <span class="linha"></span>
+                <label for="form-desc">Descrição</label for="">
+                <textarea name="" id="form-desc" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Cadastrar"></input>
+            </form>
+        </section>
+        <section id="lista-cursos" class="card">
+            <h1 class="title">Lista de Cursos</h1>
+            <input type="text" name="" id="pesquisa-cursos" placeholder="buscar por nomes...">
+            <label for="pesquisa-cursos" id="lupa"><i class="fas fa-search"></i></label>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Duração</th>
+                    <th>Data de Inicio</th>
+                    <th>Data de Final</th>
+                </tr>
+                <tbody id="resultado"></tbody>
+            </table>
+            <small>*Apaga com duplo clique na linha</small>
+        </section>
+    </main>
+    <footer>
+        <P>&copy;Keylane Silva & Edinelson Lima</P>
+        <script src="js/script.js"></script>
+        <script src="js/alert.js"></script>
+        <script src="https://kit.fontawesome.com/a264415e3e.js" crossorigin="anonymous"></script>
+    </footer>
+
+    <div id="dialogoverlay">
+        <div id="dialogbox" class="card"></div>
+    </div>
+</body>
+
+</html>
