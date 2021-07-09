@@ -2,7 +2,7 @@
 
 <img src="./cadastro.gif"/>
 
-**Desenvolvido em parceria com <a href="https://github.com/KeylaneSilva" target="_blank">Kaylane Silva</a>**
+**Desenvolvido em parceria com <a href="https://github.com/KeylaneSilva" target="_blank">Keylane Silva</a>**
 <hr>
 <br>
 
